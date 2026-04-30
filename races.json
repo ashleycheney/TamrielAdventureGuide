@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Nord",
+        "bonus": "+10 Two-Handed, +5 Block, +5 One-Handed, +5 Light Armor, +5 Speech, +5 Smithing",
+        "desc": "The proud children of Skyrim itself. Nords are built for battle, with a natural resistance to frost and an unshakeable will that has made them legendary warriors across all of Tamriel. If you want to wade into the thick of a fight and come out standing, you were born a Nord."
+    },
+    {
+        "name": "Imperial",
+        "bonus": "+10 Restoration, +5 Block, +5 Destruction, +5 Enchanting, +5 One-Handed, +5 Heavy Armor",
+        "desc": "Citizens of the great Cyrodilic Empire, Imperials are natural diplomats and soldiers in equal measure. Their Voice of the Emperor ability can calm even the most hostile enemies, buying precious seconds that can turn the tide of any encounter. A versatile and underrated pick."
+    },
+    {
+        "name": "Breton",
+        "bonus": "+10 Conjuration, +5 Alchemy, +5 Alteration, +5 Illusion, +5 Restoration, +5 Speech",
+        "desc": "Half-elven descendants from the province of High Rock, Bretons carry magic in their blood. Their innate resistance to spells and the Dragonskin power that absorbs incoming magic makes them the single toughest race to kill with a spell. Mages and Spellswords love this race."
+    },
+    {
+        "name": "Redguard",
+        "bonus": "+10 One-Handed, +5 Alteration, +5 Archery, +5 Block, +5 Destruction, +5 Smithing",
+        "desc": "Warriors from the harsh deserts of Hammerfell, Redguards are the finest natural swordsmen in Tamriel. Their Adrenaline Rush ability regenerates stamina at an incredible rate, making them perfect for players who love aggressive, stamina-heavy combat styles."
+    },
+    {
+        "name": "Khajiit",
+        "bonus": "+10 Sneak, +5 Alchemy, +5 Archery, +5 Lockpicking, +5 Pickpocket, +5 One-Handed",
+        "desc": "Feline travelers from the warm sands of Elsweyr, Khajiit are naturally gifted thieves and traders. Their Night Eye ability pierces total darkness, and their claws deal bonus unarmed damage. If you want to pick every lock, lift every purse, and disappear into the shadows, this is your race."
+    },
+    {
+        "name": "Argonian",
+        "bonus": "+10 Lockpicking, +5 Alteration, +5 Light Armor, +5 Pickpocket, +5 Restoration, +5 Sneak",
+        "desc": "The reptilian people of the Black Marsh are survivors above all else. Argonians are immune to disease, resist poison, and can breathe underwater indefinitely. Their Histskin power regenerates health at a staggering rate, making them one of the most durable races in a tough spot."
+    },
+    {
+        "name": "High Elf",
+        "bonus": "+10 Illusion, +5 Alteration, +5 Conjuration, +5 Destruction, +5 Enchanting, +5 Restoration",
+        "desc": "The proud Altmer of the Summerset Isles are the most naturally gifted spellcasters in all of Tamriel. They begin the game with 50 extra magicka and their Highborn power regenerates magicka rapidly. If you are planning a pure mage playthrough, High Elf is the gold standard."
+    },
+    {
+        "name": "Wood Elf",
+        "bonus": "+10 Archery, +5 Alchemy, +5 Light Armor, +5 Lockpicking, +5 Pickpocket, +5 Sneak",
+        "desc": "The Bosmer of Valenwood are masters of the bow and the wilderness. Their Command Animal ability turns beasts into allies, and their natural resistance to poison and disease keeps them alive in the wild places of Skyrim. The definitive archer race, and it is not particularly close."
+    },
+    {
+        "name": "Dark Elf",
+        "bonus": "+10 Destruction, +5 Alteration, +5 Illusion, +5 Light Armor, +5 Sneak, +5 One-Handed",
+        "desc": "The Dunmer of Morrowind are a rare combination of magic and martial skill, with a natural resistance to fire and the Ancestor's Wrath power that wraps them in a damaging flame cloak. Dark Elves are the top pick for anyone who wants to mix swords and spells without fully committing to either."
+    },
+    {
+        "name": "Orc",
+        "bonus": "+10 Heavy Armor, +5 Block, +5 Enchanting, +5 One-Handed, +5 Smithing, +5 Two-Handed",
+        "desc": "The Orsimer are walking fortresses. Their Berserker Rage power doubles all damage dealt and cuts all incoming damage in half for 60 seconds -- a short window that can absolutely devastate any enemy in the game. If you want to hit hard and take a beating, no race does it better."
+    }
+]
