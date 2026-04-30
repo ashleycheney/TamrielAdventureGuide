@@ -1,0 +1,530 @@
+/* color variables and shadows */
+:root {
+    --body-bg: #121212;
+    --surface: #1E1E1E;
+    --surface-dark: #0A0A0A;
+    --gold: #D4AF37;
+    --sage: #A3C1AD;
+    --body-text: #E0E0E0;
+    --white: #fff;
+    --med-gray: #555;
+    --dark-gray: #222;
+    --light-gray: #2a2a2a;
+    --orange: #d04936;
+
+    --small-shadow: 5px 5px 8px rgba(0, 0, 0, 0.6);
+    --spread-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+/* base styles */
+body {
+    background-color: var(--body-bg);
+    font-family: Raleway, sans-serif;
+    line-height: 1.3;
+    color: var(--body-text);
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header, main, section, footer {
+    display: block;
+    width: calc(100% - 3rem);
+    max-width: 1100px;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: var(--surface);
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--light-gray);
+}
+
+/* hides content visually but keeps it for screen readers */
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* headings */
+h1, h2, h3, h4 {
+    font-weight: bold;
+    text-align: center;
+}
+
+h1 {
+    font-family: Cinzel, serif;
+    font-size: 2.5rem;
+    color: var(--gold);
+    padding-bottom: 0.75rem;
+    border-bottom: 3px solid var(--light-gray);
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-family: Cinzel, serif;
+    font-size: 1.75rem;
+    color: var(--sage);
+    padding-bottom: 0.75rem;
+    border-bottom: 3px solid var(--light-gray);
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+h4 {
+    font-size: 1.35rem;
+    margin: 1rem 0;
+}
+
+/* header */
+header {
+    text-align: center;
+    background-color: var(--surface);
+    border-bottom: 3px solid var(--gold);
+}
+
+header p {
+    color: var(--sage);
+    font-size: 1.1rem;
+    margin: 0.5rem auto 1rem auto;
+    max-width: 65ch;
+    padding: 0.5rem 1rem;
+}
+
+/* nav */
+nav {
+    background-color: var(--surface-dark);
+    width: 100%;
+    margin: 0.5rem 0 0 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav a, nav a:visited {
+    display: block;
+    text-decoration: none;
+    padding: 1rem;
+    margin: 0 0.5rem;
+    width: fit-content;
+    background-color: var(--surface-dark);
+    color: var(--sage);
+    font-family: Cinzel, serif;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    box-shadow: none;
+    border-bottom: 2px solid transparent;
+    transition: all 300ms;
+}
+
+/* main and sections */
+main {
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+}
+
+main section {
+    margin: 1rem auto;
+    width: calc(100% - 2rem);
+    background-color: var(--surface);
+}
+
+/* paragraphs */
+p {
+    padding: 1rem;
+    font-size: 1.1rem;
+    max-width: 65ch;
+    margin: 0 auto;
+    color: var(--body-text);
+}
+
+/* links */
+a, a:visited {
+    color: var(--sage);
+}
+
+a:focus {
+    outline: 4px solid var(--gold);
+}
+
+/* lists */
+ul {
+    padding-left: 2rem;
+    list-style-type: disc;
+}
+
+li {
+    padding: 0.25rem 0;
+}
+
+/* form styles */
+form {
+    width: 90%;
+    max-width: 350px;
+    margin: 0 auto 2rem auto;
+    font-size: 1.1rem;
+}
+
+label {
+    display: inline-block;
+    margin: 1em 0 0 0;
+    font-size: 1.1rem;
+    color: var(--sage);
+}
+
+input, textarea {
+    display: block;
+    width: calc(100% - 1.5em);
+    padding: 0.5em;
+    border: 1px solid var(--light-gray);
+    border-radius: 0;
+    outline: none;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.4);
+    font-size: 1.1rem;
+    background-color: var(--body-bg);
+    color: var(--body-text);
+    font-family: Raleway, sans-serif;
+}
+
+input:focus, input:focus-within, input:focus-visible {
+    outline: 2px solid var(--gold);
+}
+
+button, input[type=submit] {
+    display: block;
+    margin: 1.5rem auto;
+    background-color: var(--gold);
+    border: none;
+    outline: none;
+    color: var(--surface-dark);
+    padding: 0.75em 1.5em;
+    font-family: Cinzel, serif;
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: -6px 6px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: all 300ms;
+    height: auto;
+}
+
+/* error and validation styles */
+.message {
+    display: none;
+    color: var(--orange);
+    font-size: 1.1em;
+    margin: 0.25em 0;
+    font-weight: bold;
+    padding: 0.25rem 0;
+}
+
+.error {
+    display: block;
+}
+
+.errorInput {
+    border: 1px solid var(--orange);
+}
+
+.hidden {
+    display: none;
+}
+
+/* carousel */
+#carousel {
+    border-bottom: 3px solid var(--gold);
+}
+
+#carousel p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+#carouselSlider {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 1rem auto;
+}
+
+#carouselSlider img {
+    display: block;
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+/* register section */
+#register {
+    text-align: center;
+}
+
+#greeting {
+    margin-bottom: 1rem;
+}
+
+/* races section - content loaded from JSON */
+#races {
+    text-align: center;
+}
+
+#races > p {
+    margin-bottom: 1.5rem;
+}
+
+#races-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.race-card {
+    background-color: var(--surface-dark);
+    border: 1px solid var(--light-gray);
+    box-shadow: var(--spread-shadow);
+    padding: 1.5rem;
+}
+
+.race-card h3 {
+    font-family: Cinzel, serif;
+    color: var(--gold);
+    font-size: 1.5rem;
+    border-bottom: 2px solid var(--light-gray);
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.race-card p {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    max-width: 100%;
+    text-align: left;
+}
+
+.race-card .bonus {
+    color: var(--sage);
+    font-weight: bold;
+    font-size: 0.95rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* playstyles section */
+#playstyles {
+    text-align: center;
+}
+
+#playstyles > p {
+    margin-bottom: 1.5rem;
+}
+
+#playstyleAccordion {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#playstyleAccordion p {
+    max-width: 100%;
+    text-align: left;
+    padding: 1rem;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    background-color: var(--surface-dark);
+    border-top: 3px solid var(--gold);
+}
+
+footer p {
+    color: var(--med-gray);
+    font-size: 1rem;
+}
+
+/* jQuery UI accordion overrides */
+.ui-widget.ui-widget-content {
+    border: 1px solid var(--light-gray);
+    font-size: 1rem;
+    font-family: Raleway, sans-serif;
+    background-color: var(--surface-dark);
+    color: var(--body-text);
+}
+
+.ui-accordion .ui-accordion-header {
+    background-color: var(--surface-dark);
+    color: var(--sage);
+    font-family: Cinzel, serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border: 1px solid var(--light-gray);
+}
+
+.ui-accordion .ui-accordion-header.ui-state-active {
+    background-color: var(--surface);
+    color: var(--gold);
+}
+
+.ui-widget-header {
+    border: none;
+    background: var(--surface-dark);
+}
+
+/* accordion content panels default to white, fixing that here */
+.ui-accordion .ui-accordion-content {
+    background-color: var(--surface) !important;
+    color: var(--body-text) !important;
+    border: 1px solid var(--light-gray);
+    border-left: 4px solid var(--gold) !important;
+    padding: 1.25rem 1.5rem;
+}
+
+.ui-accordion .ui-accordion-content p {
+    color: var(--body-text) !important;
+    padding: 0;
+    max-width: 100%;
+}
+
+/* active header */
+.ui-accordion .ui-accordion-header.ui-state-active {
+    background-color: var(--surface) !important;
+    color: var(--gold) !important;
+    border-left: 4px solid var(--gold) !important;
+    border-bottom: none;
+}
+
+/* lists inside accordion panels */
+#playstyleAccordion ul {
+    padding: 0.5rem 0 1rem 1.5rem;
+    list-style-type: disc;
+    max-width: 100%;
+}
+
+#playstyleAccordion li {
+    color: var(--body-text);
+    font-size: 1rem;
+    padding: 0.4rem 0;
+    line-height: 1.5;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+#playstyleAccordion li:last-child {
+    border-bottom: none;
+}
+
+#playstyleAccordion li strong {
+    color: var(--gold);
+}
+.slick-prev:before, .slick-next:before {
+    color: var(--gold);
+    font-size: 1.5rem;
+}
+
+.slick-dots {
+    position: static;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0.75rem 0 0.5rem 0;
+    margin: 0;
+    background-color: var(--surface);
+}
+
+.slick-dots li {
+    margin: 0 4px;
+    padding: 0;
+    width: auto;
+    height: auto;
+}
+
+.slick-dots li button {
+    display: block;
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    font-size: 0;
+    line-height: 0;
+}
+
+.slick-dots li button:before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--sage);
+    opacity: 0.5;
+    font-size: 0;
+}
+
+.slick-dots li.slick-active button:before {
+    background-color: var(--gold);
+    opacity: 1;
+}
+
+/* hover styles - only loads on devices that support hover */
+@media (hover: hover) {
+    nav a:hover {
+        color: var(--gold);
+        border-bottom: 2px solid var(--gold);
+    }
+
+    button:hover, input[type="submit"]:hover {
+        background-color: var(--surface);
+        color: var(--gold);
+        box-shadow: -3px 3px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    a:hover {
+        color: var(--gold);
+    }
+
+    .race-card:hover {
+        border-color: var(--gold);
+    }
+}
+
+/* responsive styles */
+@media screen and (min-width: 600px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+}
