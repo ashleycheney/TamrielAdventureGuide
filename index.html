@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamriel Adventurer's Hub</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Cinzel:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+
+    <!-- Site Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+    <!-- Slick Carousel JS -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- Site Script -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Tamriel Adventurer's Hub</h1>
+        <p>Your guide to the lands, races, and legends of The Elder Scrolls: Skyrim.</p>
+        <nav>
+            <ul>
+                <li><a href="#carousel">The Realm</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#races">Races</a></li>
+                <li><a href="#playstyles">Playstyles</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- CAROUSEL SECTION -->
+        <section id="carousel">
+            <h2>The Realm of Skyrim</h2>
+            <p>From the frozen peaks of the Throat of the World to the dense pine forests of Falkreath, Skyrim is a land of breathtaking beauty and ancient danger.</p>
+            <div id="carouselSlider">
+                <div>
+                    <img src="images/skyrim1.jpg" alt="A sweeping view of the snowy mountains of Skyrim at dusk">
+                </div>
+                <div>
+                    <img src="images/skyrim2.jpg" alt="A tranquil forest in the hold of Falkreath under golden light">
+                </div>
+                <div>
+                    <img src="images/skyrim3.jpg" alt="The ancient walls of Whiterun city glowing in the evening sun">
+                </div>
+            </div>
+        </section>
+
+        <!-- REGISTER / WEB STORAGE SECTION -->
+        <section id="register">
+            <h2 id="greeting">Register Your Adventurer</h2>
+            <form id="registerForm">
+                <label for="charName">Your Adventurer Name:</label>
+                <input type="text" name="charName" id="charName">
+                <p class="message">Please enter your adventurer name.</p>
+                <label for="homeProvince">Home Province:</label>
+                <input type="text" name="homeProvince" id="homeProvince">
+                <p class="message">Please enter your home province.</p>
+                <input type="submit" id="registerBtn" value="Register">
+            </form>
+        </section>
+
+        <!-- RACES / AJAX SECTION -->
+        <section id="races">
+            <h2>Explore the Races of Tamriel</h2>
+            <p>Each of the races of Tamriel brings unique strengths to your adventure. Choose wisely — your heritage shapes your destiny.</p>
+            <div id="races-container"></div>
+        </section>
+
+        <!-- PLAYSTYLES / ACCORDION SECTION -->
+        <section id="playstyles">
+            <h2>Classic Playstyles</h2>
+            <p>Whether you prefer stealth, sorcery, or brute strength, Skyrim has a path for every adventurer. Click a playstyle below to learn more.</p>
+            <div id="playstyleAccordion">
+                <h3>The Thief</h3>
+                <div>
+                    <p>The Thief lives in the shadows, striking from darkness and vanishing before the enemy knows what hit them. Mastering Sneak, Pickpocket, and Lockpicking, a skilled thief can loot an entire dungeon without drawing a single sword. The Thieves Guild of Riften is always looking for talented new recruits with light fingers and even lighter footsteps.</p>
+                </div>
+                <h3>The Mage</h3>
+                <div>
+                    <p>The Mage commands the raw forces of nature — fire, frost, and lightning — through years of dedicated study at the College of Winterhold. Where a warrior relies on muscle and a thief relies on cunning, the Mage relies on knowledge. With the right spells and enough magicka, no dungeon wall can stop you and no enemy can withstand the fury of the arcane.</p>
+                </div>
+                <h3>The Warrior</h3>
+                <div>
+                    <p>The Warrior charges headlong into battle, relying on heavy armor, a trusty shield, and the strength of their sword arm to see them through. Champions of the Companions of Whiterun, warriors are respected across Skyrim for their courage and their power. If you prefer to look your enemies in the eye before cutting them down, the Warrior path is yours.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Copyright &copy; <span></span> Tamriel Adventurer's Hub &mdash; GIT 418</p>
+    </footer>
+
+</body>
+</html>
